@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -32,26 +32,9 @@ export default {
           900: '#713f12',
         }
       },
-      animation: {
-        'float-slow': 'float 6s ease-in-out infinite',
-        'float-medium': 'float 4s ease-in-out infinite',
-        'pulse-gentle': 'pulse-gentle 3s ease-in-out infinite',
-        'shine': 'shine 2s linear infinite',
-        'bounce-slow': 'bounce 3s infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0) rotate(0)' },
-          '50%': { transform: 'translateY(-20px) rotate(5deg)' },
-        },
-        'pulse-gentle': {
-          '0%, 100%': { opacity: 1, transform: 'scale(1)' },
-          '50%': { opacity: 0.8, transform: 'scale(0.98)' },
-        },
-        shine: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(100%)' },
-        }
+      fontFamily: {
+        handwriting: ['Dancing Script', 'cursive'],
+        sans: ['Inter', 'sans-serif'],
       },
       boxShadow: {
         'romantic': '0 20px 50px -12px rgba(244, 63, 94, 0.25)',
